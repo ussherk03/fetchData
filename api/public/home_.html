@@ -1,0 +1,155 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="theme-color" content="#000000" />
+    <meta name="description" content="Web site created using create-react-app" />
+    <link rel="stylesheet" href="../styles/home_.css">
+    <link rel="stylesheet" href="../fonts/css/all.css">
+    <link rel="shortcut icon" href="./csshtmllogo.jpg" type="image/x-icon">
+
+    <title>App | Home</title>
+</head>
+
+<body>
+
+    <!-- HOME PAGE -->  <!-- HOME PAGE -->
+    <div class="container">
+        <div class="home-page">
+            <h1 class="banner">Welcome To Fetch JSON</h1>
+
+            <div class="select-wrapper">
+                <select class="select">
+                    <option>Select ID from here</option>
+                    <option>1</option>
+                    <option>2</option>
+                    <option>3</option>
+                    <option>4</option>
+                    <option>5</option>
+                </select>
+                <i class="fa fa-chevron-circle-down"></i>
+            </div>
+            
+
+            <div class="link-box">
+                <a href="home_.html#e-gap" class="edit-bttn" onclick="storeID()">
+                    Edit
+                </a>
+            </div>
+        </div>
+    </div>
+
+
+    <!-- EDIT PAGE --> <!-- EDIT PAGE -->
+    <div class="edit-box">
+        <a name="e-gap" class="e-gap">
+
+        </a>
+
+        <a name="edit-banner">
+            <h1 class="edit-banner">Welcome To Edit Page</h1>
+        </a>
+
+        <div class="form">
+            <div class="form-item">
+                <label htmlFor="text">UserID</label>
+                <input type="text" class="edit-input" id="userID" />
+            </div>
+
+            <div class="form-item">
+                <label htmlFor="text">ID</label>
+                <input type="text" class="edit-input" id="id" />
+            </div>
+
+            <div class="form-item">
+                <label htmlFor="text">Title</label>
+                <input type="text" class="edit-input" id="title" />
+            </div>
+
+            <div class="checkboxes">
+                <label class="completed">Completed?</label>
+
+                <div class="bool">
+                    <label>TRUE</label>
+                    <input type="checkbox" id="yes" check="false" />
+                </div>
+
+                <div class="bool">
+                    <label>FALSE</label>
+                    <input type="checkbox" id="no" check="false" />
+                </div>
+            </div>
+
+            <a href="home_.html#c-gap" class="preview-bttn">
+                Preview
+            </a>
+        </div>
+    </div>
+    <!-- EDIT PAGE --> <!-- EDIT PAGE -->
+
+
+
+    <!--CONFIRM PAGE--> <!--CONFIRM PAGE-->
+    
+    <div class="confirm-page">
+        <a name="c-gap" class="c-gap">
+
+        </a>
+        <h1 class="confirm-banner">Confirm The Page below</h1>
+
+        <div class="c-box">
+            <div class="c-item">
+                <label class="c-label">USER-ID</label>
+                <p class="c-txt" id="c-ID">Data from form</p>
+            </div>
+
+            <div class="c-item">
+                <label class="c-label">ID-NUMBER</label>
+                <p class="c-txt" id="c-num">Data from form</p>
+            </div>
+
+            <div class="c-item">
+                <label class="c-label">TITLE</label>
+                <p class="c-txt" id="c-title">Data from form</p>
+            </div>
+
+            <div class="checkboxes">
+                <label class="completed">Completed?</label>
+
+                <div class="bool">
+                    <label>TRUE</label>
+                    <input type="checkbox" id="c-yes" check="false" />
+                </div>
+
+                <div class="bool">
+                    <label>FALSE</label>
+                    <input type="checkbox" id="c-no" check="false" />
+                </div>
+            </div>
+
+            <a href="./home_.html" class="confirm-bttn">Save</a>
+
+        </div>
+    </div>
+
+</body>
+
+<script src="../src/app.js"></script>
+
+</html>
+
+
+
+
+
+
+
+
+
+
+
+

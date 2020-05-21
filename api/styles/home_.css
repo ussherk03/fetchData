@@ -1,0 +1,372 @@
+body {
+    width: 100%;
+    margin: 0 auto;
+    overflow: hidden;
+}
+
+.container {
+    height: 100vh;
+    padding: auto;
+    position: relative;
+}
+
+.container::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: url('../img/parrot1.jpg') center/cover;
+    z-index: -2;
+    opacity: 0.8;
+
+}
+
+.home-page {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.banner {
+    font-family: Harrison, serif;
+    color: #fff;
+    letter-spacing: 2px;
+    text-align: center;
+    font-size: 3rem;
+    text-shadow: 2px 3px 6px rgb(41, 40, 40);
+}
+
+.select-wrapper {
+    position: relative;
+}
+
+.select {
+    width: 15rem;
+    height: 3em;
+    margin: 0 auto;
+    text-align: center;
+    outline: none;
+    transition: 0.66s;
+    display: block;
+    border-radius: 6px;
+    padding: 1px 2px;
+
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    -o-appearance: none;
+    appearance: none;
+
+}
+
+.select::ms-expand {
+    display: none;
+}
+
+.select:hover {
+    border: 2px rgb(57, 113, 218) solid;
+    cursor: pointer;
+}
+
+.fa-chevron-circle-down {
+    position: absolute;
+    top: 0.3em;
+    right: 6.8em;
+
+    font-size: 1.5rem;
+    color: rgb(120, 180, 240);
+    pointer-events: none;
+}
+
+.select option {
+    font-weight: 900;
+    font-size: 1rem;
+    font-family: Jokerman, serif;
+    text-align: center;
+    height: 3em;
+}
+
+option:hover {
+    cursor: pointer;
+}
+
+.dropdown {
+    background-color: grey;
+    height: 15rem;
+}
+
+.link-box {
+    margin-top: 3em;
+    text-align: center;
+}
+
+.edit-bttn {
+    text-decoration: none;
+    color: white;
+    background-color: dodgerblue;
+    padding: 6px 2.3rem;
+    border-radius: 29px;
+    font-family: Lato, serif;
+    font-size: 1.5rem;
+    transition: 0.3s ease-in-out;
+    letter-spacing: 1px;
+}
+
+.edit-bttn:hover {
+    background-color: rgb(88, 235, 88);
+    letter-spacing: 3px;
+}
+
+
+
+
+
+/*** EDIT SECTION ***/
+.edit-banner {
+    text-align: center;
+    color: rgba(0, 0, 0, 0.521);
+    font-family: 'Alegreya', serif;
+    font-size: 3rem;
+    text-shadow: 2px 3px 5px rgb(48, 47, 47);
+    margin-top: 2em;
+}
+
+.edit-box {
+    height: 100vh;
+    background: url('../img/road_turn.jpg') no-repeat center/cover;
+    padding: 2rem;
+
+    position: relative;
+    top: 200rem;
+}
+
+.edit-box .form {
+    position: absolute;
+    top: 60%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+
+    display: flex;
+    flex-direction: column;
+}
+
+.form:not(:last-child) {
+    margin-bottom: 2rem;
+}
+
+.form .form-item {
+    margin-bottom: 2em;
+}
+
+.form-item label {
+    display: block;
+    font-family: Georgia, serif;
+    font-size: 23px;
+    font-weight: bold;
+    margin-bottom: 2.8px;
+    background-color: rgba(236, 34, 34, 0.452);
+    letter-spacing: 2px;
+
+    padding: 5px 9px;
+    width: 6rem;
+}
+
+.form-item input {
+    padding: 6px 12px;
+    outline: none;
+    border: none;
+    font-size: 21px;
+    font-family: Lato, serif;
+    border-radius: 5px;
+    box-shadow: 2px 3px 9px #000;
+}
+
+.checkboxes {
+    font-size: 19px;
+    display: flex;
+    flex-direction: row;
+}
+
+.completed {
+    font-family: 'Roboto', serif;
+    font-weight: 900;
+    color: teal;
+}
+
+.bool {
+    margin-left: 1em;
+}
+
+.bool label {
+    font-weight: 900;
+    font-family: 'Roboto', serif;
+    font-size: 23px;
+    color: whitesmoke;
+}
+
+.bool:first-child {
+    margin-bottom: 3em;
+}
+
+.bool #yes,
+.bool #no {
+    box-shadow: none;
+    margin-left: 1rem;
+    transform: scale(2.3);
+}
+
+.preview-bttn {
+    text-decoration: none;
+    color: white;
+    background-color: dodgerblue;
+    border-radius: 6px;
+    padding: 6px 11px;
+    font-family: Lato, serif;
+    font-size: 21px;
+    text-align: center;
+    margin-top: 1em;
+    letter-spacing: 1px;
+    transition: 0.3s;
+}
+
+.preview-bttn:hover {
+    background-color: rgb(90, 223, 90);
+    letter-spacing: 3px;
+}
+
+
+
+/*** CONFIRM SECTION **/
+
+.e-gap,
+.c-gap {
+    height: 9em;
+}
+
+.confirm-page {
+    height: 100vh;
+    background: url('../img/road_turn.jpg') no-repeat center/cover;
+    padding: 2rem;
+
+    position: relative;
+    top: 400rem;
+}
+
+.confirm-banner {
+    text-align: center;
+    font-family: 'Alegreya', serif;
+    font-size: 3rem;
+    color: rgba(0, 0, 0, 0.521);
+    text-shadow: 2px 3px 5px rgba(53, 52, 52, 0.384);
+    margin-top: 2em;
+}
+
+
+.c-box {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 30em;
+    padding: 3em;
+
+    display: flex;
+    flex-direction: column;
+}
+
+.c-item {
+    margin-bottom: 2rem;
+}
+
+.c-label {
+    font-family: Georgia, serif;
+    font-size: 1rem;
+    color: white;
+    background-color: rgba(0, 0, 0, 0.349);
+    padding: 9px 1rem;
+    letter-spacing: 3px;
+}
+
+.c-txt {
+    font-family: Lato, serif;
+    font-weight: 900;
+    font-size: 1.2rem;
+    margin-left: -3px;
+    color: white;
+    background-color: rgba(44, 145, 123, 0.507);
+    display: inline-block;
+    padding: 9px 2rem;
+}
+
+.confirm-bttn {
+    text-decoration: none;
+    color: white;
+    background-color: dodgerblue;
+    border-radius: 6px;
+    padding: 6px 11px;
+    font-family: Lato, serif;
+    font-size: 21px;
+    text-align: center;
+    margin: 0 auto;
+    margin-top: 2em;
+    letter-spacing: 1px;
+    transition: 0.3s;
+}
+
+.confirm-bttn:hover {
+    background-color: rgb(90, 223, 90);
+    letter-spacing: 3px;
+}
+
+.checkboxes {
+    font-size: 19px;
+    display: flex;
+    flex-direction: row;
+}
+
+.check {
+    font-family: 'Roboto', serif;
+    font-weight: 900;
+    color: red;
+}
+
+.bool {
+    margin-left: 1em;
+}
+
+.bool label {
+    font-weight: 900;
+    font-family: 'Roboto', serif;
+}
+
+.bool:first-child {
+    margin-bottom: 3em;
+}
+
+.bool #c-yes,
+.bool #c-no {
+    box-shadow: none;
+    margin-left: 1rem;
+    transform: scale(2.3);
+}
+
+.confirm-bttn {
+    text-decoration: none;
+    color: white;
+    background-color: dodgerblue;
+    border-radius: 6px;
+    padding: 6px 11px;
+    font-family: Lato, serif;
+    font-size: 21px;
+    text-align: center;
+    margin-top: 1em;
+    letter-spacing: 1px;
+    transition: 0.3s;
+}
+
+.confirm-bttn:hover {
+    background-color: rgb(90, 223, 90);
+    letter-spacing: 3px;
+}
